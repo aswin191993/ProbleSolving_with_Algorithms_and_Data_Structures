@@ -1,0 +1,50 @@
+class node:
+	def __init__(self,item):
+#		self.head=None
+		self.data=item
+		self.next=None
+
+	def __str__(self):
+		print "Node"
+	
+	def get_data(self):
+		return self.data	
+	
+	def get_next(self):
+		return self.next
+
+	def set_data(self,n_data):
+		self.data=n_data
+	
+	def set_next(self,new_nxt):
+		self.next=new_nxt
+
+
+class unlist:
+	
+	def __init__(self):
+		self.head=None
+
+mtlist=unlist()
+
+
+def add(self,new_data):
+	temp=node(new_data)
+	temp.set_next(self.head)
+	self.head = temp
+
+
+
+
+#n=node(10)
+#print n.get_data()
+#print n.get_next()		
+
+
+c=node(4)
+add(23)
+#c.add(42)
+#print c.get_data()
+#p= c.get_data()
+
+#print str(p)
